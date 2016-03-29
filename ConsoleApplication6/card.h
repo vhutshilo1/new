@@ -12,13 +12,14 @@ private:
 	char letter;
 
 public:
-	card(int x, char y) :number(x), letter(y) {};
+	card(int = 0, char = ' ');//
+	
 	void set(int , char );
 		int getnum( );
 		char getlet();
-		friend ostream& operator<<(ostream&, const card&);
-			~card();
+friend ostream& operator<<(ostream&, const card&);
+	//~card();
 };
 
-
+//
 #endif

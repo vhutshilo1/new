@@ -10,14 +10,11 @@ int main(int argc, char *argv[]) {
 
 	cout << "My card is " << myCard << endl;			// demonstrate overloaded stream insertion operator
 
-	myCard.set(10, 30);									// change the card number and letter
-
-											
-	
+	myCard.set(10,'V');									// change the card number and letter
 
 	myCard.getnum();
 	myCard.getlet();               
 
-	cout << "My card has number" << number << " and letter " << letter;   // display values in another format
+	cout << "My card has number" <<myCard.getnum()<< " and letter " << myCard.getlet()<<'\n';   // display values in another format
 
 }
